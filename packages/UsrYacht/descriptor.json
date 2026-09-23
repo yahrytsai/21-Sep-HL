@@ -7,6 +7,13 @@
     "Maintainer": "Customer",
     "ProjectPath": "Files/UsrYacht.csproj",
     "Description": "#OriginalMaintainer:Customer",
-    "DependsOn": []
+    "DependsOn": [
+      {
+        "UId": "3a71e376-9ac3-3049-c62b-9c43b9abe054",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCoreBase",
+        "Type": 1
+      }
+    ]
   }
 }
