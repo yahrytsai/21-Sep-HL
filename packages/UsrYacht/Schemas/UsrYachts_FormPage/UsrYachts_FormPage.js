@@ -26,6 +26,27 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "PushMeButton",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(PushMeButton_caption)#",
+					"color": "outline",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "copilot-rewrite-friendly-icon",
+					"clicked": {
+						"request": "usr.PushButtonRequest"
+					},
+					"clickMode": "default"
+				},
+				"parentName": "ActionButtonsContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "UsrName",
 				"values": {
 					"layoutConfig": {
@@ -573,7 +594,35 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[{
+                request: "usr.PushButtonRequest",
+                /* Implementation of the custom query handler. */
+                handler: async (request, next) => {
+                    console.log("Button works...");
+                    Terrasoft.showInformation("My button was pressed.");
+                    var price = await request.$context.PDS_UsrPrice_xirzusw;
+                    console.log("Price = " + price);
+                    request.$context.PDS_UsrComment_enczraw = "comment from JS code!";
+                    /* Call the next handler if it exists and return its result. */
+                    return next?.handle(request);
+                }
+            },
+			 {
+                request: "crt.HandleViewModelAttributeChangeRequest",
+                /* The custom implementation of the system query handler. */
+                handler: async (request, next) => {
+                     if (request.attributeName === 'PDS_UsrPrice_xirzusw' ||                 // if price changed
+                       request.attributeName === 'PDS_UsrPassengerCount_k8utt4f' ) {         // or Passenger count changed
+                        let price = await request.$context.PDS_UsrPrice_xirzusw;
+                        let passengers = await request.$context.PDS_UsrPassengerCount_k8utt4f;
+                        let ticket_price = price / passengers;
+                        request.$context.PDS_UsrTicketPrice_2uwrw0x = ticket_price;
+                    }
+                    /* Call the next handler if it exists and return its result. */
+                    return next?.handle(request);
+                }
+            }						   
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};
