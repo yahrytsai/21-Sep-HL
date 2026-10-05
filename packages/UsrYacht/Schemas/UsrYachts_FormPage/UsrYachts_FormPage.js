@@ -26,6 +26,47 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
+				"name": "Button_Actions",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_Actions_caption)#",
+					"color": "default",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "actions-button-icon",
+					"menuItems": [],
+					"clickMode": "menu"
+				},
+				"parentName": "ActionButtonsContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_wgf44hj",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_wgf44hj_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrYachtAvgTickPrice",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "YachtId"
+						}
+					}
+				},
+				"parentName": "Button_Actions",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
@@ -43,7 +84,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 				},
 				"parentName": "ActionButtonsContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
