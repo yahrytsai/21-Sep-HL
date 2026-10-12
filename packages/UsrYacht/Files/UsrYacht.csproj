@@ -707,6 +707,7 @@
 	<ItemGroup Label="Entity Files">
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrCategoryInYacht/UsrCategoryInYacht.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrCategoryInYacht/UsrCategoryInYacht.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrDriveType/UsrDriveType.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrDriveType/UsrDriveType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrGoldRate/UsrGoldRate.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrGoldRate/UsrGoldRate.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrTrafficLight/UsrTrafficLight.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrTrafficLight/UsrTrafficLight.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrYachtCategory/UsrYachtCategory.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrYachtCategory/UsrYachtCategory.cs')" />

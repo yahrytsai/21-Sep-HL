@@ -1,0 +1,116 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ServiceSchemaManager",
+      "UId": "58537c6d-ede2-4eca-8a1b-757733d6d9b0",
+      "A2": "UsrService_IdBanking",
+      "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "bd2fc35b-1255-4cdd-b59f-9717d7360cce",
+      "B8": "10.0.0.801",
+      "IQ1": "https://link.idbanking.am",
+      "IQ2": 1,
+      "IQ3": 3,
+      "IQ7": [],
+      "IQ4": [
+        {
+          "UId": "2e6959f8-3eee-4369-9e7c-af82ad2331a7",
+          "A2": "UsrGold",
+          "A3": "58537c6d-ede2-4eca-8a1b-757733d6d9b0",
+          "A4": "58537c6d-ede2-4eca-8a1b-757733d6d9b0",
+          "IR3": 5000,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 1,
+            "IW1": [],
+            "IT2": 1,
+            "IT1": "/api/Rate/Gold"
+          },
+          "IR2": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "08f38a78-b04e-419e-9668-0caba6d00cc9",
+                "A2": "UsrCSList",
+                "IU1": "$.cashSellList",
+                "IU2": "Object",
+                "IU3": true,
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": [
+                  {
+                    "UId": "277e1e15-f3ec-43e8-9813-6766391381ea",
+                    "A2": "UsrCSLWeight",
+                    "IU1": "weight",
+                    "IU2": "Integer",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "3773317a-72af-4703-8941-b7183d6e157c",
+                    "A2": "UsrCSLRate",
+                    "IU1": "rate",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  }
+                ]
+              },
+              {
+                "UId": "6b309acb-aa77-4716-be7d-bd2ebb599e12",
+                "A2": "UsrCBList",
+                "IU1": "$.cashBuyList",
+                "IU2": "Object",
+                "IU3": true,
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": [
+                  {
+                    "UId": "d5304c73-bb6f-4cf8-ae32-f202a3e00709",
+                    "A2": "UsrCBLWeight",
+                    "IU1": "weight",
+                    "IU2": "Integer",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "2b2e3d6a-e16d-488f-ab08-6d47bc2046f3",
+                    "A2": "UsrCBLRate",
+                    "IU1": "rate",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -67,6 +67,21 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
+				"name": "MenuItem_YachtService",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_YachtService_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "usr.RunWebServiceRequest"
+					}
+				},
+				"parentName": "Button_Actions",
+				"propertyName": "menuItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
@@ -710,6 +725,40 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
                         let ticket_price = price / passengers;
                         request.$context.PDS_UsrTicketPrice_2uwrw0x = ticket_price;
                     }
+                    /* Call the next handler if it exists and return its result. */
+                    return next?.handle(request);
+                }
+            },
+			 {
+                request: "usr.RunWebServiceRequest",
+                /* Implementation of the custom query handler. */
+                handler: async (request, next) => {
+                    console.log("Run web service button works...");
+                    
+                    // get id from drive type lookup type object
+                    var typeObject = await request.$context.PDS_UsrDriveType_tyl0ju2;
+                    var driveTypeId = "";
+                    if (typeObject) {
+                        driveTypeId = typeObject.value;
+                    }
+                    /* Create an instance of the HTTP client from @creatio-devkit/common. */
+                    const httpClientService = new sdk.HttpClientService();
+                    /* Specify the URL to run web service method. */
+                    const baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+                    const transferName = "rest";
+                    const serviceName = "YachtService";
+                    const methodName = "GetMaxPriceByDriveTypeId";
+                    const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+                    
+                    //const endpoint = "http://y-todosan-nb.tscrm.com:40003/0/rest/YachtService/GetMaxPriceByDriveTypeId";
+                    /* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
+                    var params = {
+                        driveTypeId: driveTypeId
+                    };
+                    const response = await httpClientService.post(endpoint, params);
+                    
+                    console.log("response max price = " + response.body.GetMaxPriceByDriveTypeIdResult);
+                    
                     /* Call the next handler if it exists and return its result. */
                     return next?.handle(request);
                 }

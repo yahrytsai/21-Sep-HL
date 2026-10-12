@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="IdBanking Service" />
+			<Item Name="ServiceMethods.UsrGold.Caption" Value="Gold" />
+			<Item Name="ServiceMethods.UsrGold.Response.Parameters.UsrCBList.Caption" Value="CashBuyList" />
+			<Item Name="ServiceMethods.UsrGold.Response.Parameters.UsrCBList.ItemProperties.UsrCBLRate.Caption" Value="Rate" />
+			<Item Name="ServiceMethods.UsrGold.Response.Parameters.UsrCBList.ItemProperties.UsrCBLWeight.Caption" Value="Weight" />
+			<Item Name="ServiceMethods.UsrGold.Response.Parameters.UsrCSList.Caption" Value="CashSellList" />
+			<Item Name="ServiceMethods.UsrGold.Response.Parameters.UsrCSList.ItemProperties.UsrCSLRate.Caption" Value="Rate" />
+			<Item Name="ServiceMethods.UsrGold.Response.Parameters.UsrCSList.ItemProperties.UsrCSLWeight.Caption" Value="Weight" />
+		</Items>
+	</Group>
+</Resources>

@@ -8,6 +8,7 @@
 			<Item Name="LocalizableStrings.CaptainEmail_label.Value" Value="Cap`s email" />
 			<Item Name="LocalizableStrings.Categories_label.Value" Value="Categories" />
 			<Item Name="LocalizableStrings.LengthCannotBeLess.Value" Value="This yacht is too short" />
+			<Item Name="LocalizableStrings.MenuItem_YachtService_caption.Value" Value="Yacht service" />
 			<Item Name="LocalizableStrings.MenuItem_wgf44hj_caption.Value" Value="Average yacht ticket price" />
 			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price is too low" />
 			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Push me" />

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "758bbf57-1372-4e85-abbc-6018e7a15f85",
+    "Name": "UsrCallIdBanking",
+    "ModifiedOnUtc": "\/Date(1791795888000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Call id banking",
+    "DependsOn": []
+  }
+}
