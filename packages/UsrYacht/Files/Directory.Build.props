@@ -6,6 +6,7 @@
 		<Compile Include="$(PkgPath)/UsrYacht/Schemas/UsrTrafficLight/UsrTrafficLight.cs" Condition="Exists('$(PkgPath)/UsrYacht/Schemas/UsrTrafficLight/UsrTrafficLight.cs')" />
 		<Compile Include="$(PkgPath)/UsrYacht/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs" Condition="Exists('$(PkgPath)/UsrYacht/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs')" />
 		<Compile Include="$(PkgPath)/UsrYacht/Schemas/UsrYachtCategory/UsrYachtCategory.cs" Condition="Exists('$(PkgPath)/UsrYacht/Schemas/UsrYachtCategory/UsrYachtCategory.cs')" />
+		<Compile Include="$(PkgPath)/UsrYacht/Schemas/UsrYachtRentals/UsrYachtRentals.cs" Condition="Exists('$(PkgPath)/UsrYacht/Schemas/UsrYachtRentals/UsrYachtRentals.cs')" />
 		<Compile Include="$(PkgPath)/UsrYacht/Schemas/UsrYachts/UsrYachts.cs" Condition="Exists('$(PkgPath)/UsrYacht/Schemas/UsrYachts/UsrYachts.cs')" />
 		<Compile Include="$(PkgPath)/UsrYacht/Schemas/UsrYachtStatus/UsrYachtStatus.cs" Condition="Exists('$(PkgPath)/UsrYacht/Schemas/UsrYachtStatus/UsrYachtStatus.cs')" />
 	</ItemGroup>

@@ -45,14 +45,14 @@
 }
 + MetaData.Schema.B2 {
   "UId": "510d85ef-4fb1-0adb-2d02-a406f45440b3",
-  "A2": "LengthCannotBeLess",
+  "A2": "LengthCannotBeMore",
   "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
   "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
   "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
 }
 + MetaData.Schema.B2 {
   "UId": "9d0e6c34-e9bd-aceb-ae2d-d3f388001fd6",
-  "A2": "PriceCannotBeLess",
+  "A2": "PriceCannotBeMore",
   "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
   "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
   "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
@@ -92,6 +92,69 @@
   "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
   "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
 }
++ MetaData.Schema.B2 {
+  "UId": "eca90a53-9a63-bedd-2b14-8006cc1c6630",
+  "A2": "CommentRequired",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
++ MetaData.Schema.B2 {
+  "UId": "9e00d2f0-42ea-fbbd-59ed-32128e3979da",
+  "A2": "GridDetailSearchFilter_br500o7_placeholder",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
++ MetaData.Schema.B2 {
+  "UId": "47709637-2c29-dad8-cdb2-27dd430a7b3c",
+  "A2": "GridDetailImportDataBtn_gs3wzzv_caption",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
++ MetaData.Schema.B2 {
+  "UId": "c2c8e5fe-bd31-0bac-1cc4-0ed6363feac8",
+  "A2": "GridDetailExportDataBtn_0gv3rum_caption",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
++ MetaData.Schema.B2 {
+  "UId": "a300d680-c6f7-8003-1bbb-1d1ea64e523d",
+  "A2": "GridDetailSettingsBtn_bmrctwj_caption",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
++ MetaData.Schema.B2 {
+  "UId": "6084feff-b8b0-2c61-0531-798b9de16837",
+  "A2": "GridDetailRefreshBtn_4014jdm_caption",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
++ MetaData.Schema.B2 {
+  "UId": "1131401d-0dbf-46eb-a96a-4128dce02386",
+  "A2": "GridDetailAddBtn_qrulxdo_caption",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
++ MetaData.Schema.B2 {
+  "UId": "1b96d5ad-950d-8581-5155-5a24db8f193a",
+  "A2": "ExpansionPanel_04dtsju_title",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
++ MetaData.Schema.B2 {
+  "UId": "3fa15aa6-b19d-e054-7f94-c1caf6d51e41",
+  "A2": "MenuItem_53wnpn1_caption",
+  "A3": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A4": "bb8d9af8-319e-43db-8170-3a1bda90bce8",
+  "A5": "bf8a0a3d-34a4-466e-83a9-ea29d408e4fe"
+}
 = MetaData.Schema.B2.["fd9e5bd2-19ad-68b5-1356-fe7b39d36f28"].A4 "bb8d9af8-319e-43db-8170-3a1bda90bce8"
 = MetaData.Schema.B2.["a77180d7-a9d0-5c7d-a47b-74c0545a1774"].A4 "bb8d9af8-319e-43db-8170-3a1bda90bce8"
 = MetaData.Schema.B2.["a53e6c9a-741a-21de-9293-9d87d6014595"].A4 "bb8d9af8-319e-43db-8170-3a1bda90bce8"
@@ -119,6 +182,15 @@
   "7b357d9c-c311-5099-08e0-8edacde51d41",
   "c0c9649c-16f7-e0aa-b572-64196c624b1d",
   "4afd6de7-4810-62f6-5176-3372540cbee6",
+  "eca90a53-9a63-bedd-2b14-8006cc1c6630",
+  "9e00d2f0-42ea-fbbd-59ed-32128e3979da",
+  "47709637-2c29-dad8-cdb2-27dd430a7b3c",
+  "c2c8e5fe-bd31-0bac-1cc4-0ed6363feac8",
+  "a300d680-c6f7-8003-1bbb-1d1ea64e523d",
+  "6084feff-b8b0-2c61-0531-798b9de16837",
+  "1131401d-0dbf-46eb-a96a-4128dce02386",
+  "1b96d5ad-950d-8581-5155-5a24db8f193a",
+  "3fa15aa6-b19d-e054-7f94-c1caf6d51e41",
   "fd9e5bd2-19ad-68b5-1356-fe7b39d36f28",
   "a77180d7-a9d0-5c7d-a47b-74c0545a1774",
   "a53e6c9a-741a-21de-9293-9d87d6014595",

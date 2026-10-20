@@ -4,8 +4,8 @@
       "Row": [
         {
           "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
-          "Value": "3cf72935-2d02-4871-97e8-466be5f37e29",
-          "DisplayValue": "Yacht minimum length"
+          "Value": "8d1ca102-f584-4ff4-8c2f-253210203af0",
+          "DisplayValue": "Minimum price to require yacht comment"
         },
         {
           "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
@@ -30,11 +30,11 @@
         },
         {
           "SchemaColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
-          "Value": "\/Date(1790847171644+0300)\/"
+          "Value": "\/Date(1791905101441+0300)\/"
         },
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "aff87b6a-f55f-4fc0-bd60-cabf53e15127"
+          "Value": "4bda1a2a-3a1b-4ffd-8f38-8ce9c97dc0fd"
         },
         {
           "SchemaColumnUId": "af6013ce-7387-4619-b4f4-30c4276fcfac",
@@ -42,15 +42,15 @@
         },
         {
           "SchemaColumnUId": "b1ffd2d8-2bd3-4c46-b9c0-782afb0996c0",
-          "Value": 0.00
+          "Value": 1200.00
         },
         {
           "SchemaColumnUId": "b36bfa07-34c7-45b1-a2ee-39e653034ba0",
-          "Value": 10
+          "Value": 0
         },
         {
           "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
-          "Value": "\/Date(1790847171533+0300)\/"
+          "Value": "\/Date(1791898113951+0300)\/"
         },
         {
           "SchemaColumnUId": "f1bc0b27-2c46-4cae-ad23-3b8940587d4f",

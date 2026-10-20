@@ -40,6 +40,12 @@ define("UsrYachts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"width": 122
 						},
 						{
+							"id": "35a791cb-c50e-d36f-56d7-6bc0df19f0c2",
+							"code": "PDS_UsrDriveType",
+							"caption": "#ResourceString(PDS_UsrDriveType)#",
+							"dataValueType": 10
+						},
+						{
 							"id": "4969e35e-c12b-57d2-c350-8699d89717a0",
 							"code": "PDS_UsrPrice",
 							"caption": "#ResourceString(PDS_UsrPrice)#",
@@ -118,6 +124,11 @@ define("UsrYachts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"path": "PDS.UsrStatus"
 						}
 					},
+					"PDS_UsrDriveType": {
+						"modelConfig": {
+							"path": "PDS.UsrDriveType"
+						}
+					},
 					"PDS_UsrPrice": {
 						"modelConfig": {
 							"path": "PDS.UsrPrice"
@@ -169,6 +180,9 @@ define("UsrYachts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						},
 						"UsrStatus": {
 							"path": "UsrStatus"
+						},
+						"UsrDriveType": {
+							"path": "UsrDriveType"
 						},
 						"UsrPrice": {
 							"path": "UsrPrice"

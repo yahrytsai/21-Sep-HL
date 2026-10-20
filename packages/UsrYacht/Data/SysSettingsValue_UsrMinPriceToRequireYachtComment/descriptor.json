@@ -1,8 +1,8 @@
 ﻿{
   "Descriptor": {
-    "UId": "a42ecbe5-6e86-54f6-8fed-b8c87a14b842",
-    "Name": "SysSettingsValue_UsrYachtMinPrice",
-    "ModifiedOnUtc": "\/Date(1790682497000)\/",
+    "UId": "27c97c5f-1dbd-731c-634c-24a4fca9d078",
+    "Name": "SysSettingsValue_UsrMinPriceToRequireYachtComment",
+    "ModifiedOnUtc": "\/Date(1791905105000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "951b2bbb-0ba3-4049-9a29-b5d4c0b6d50f",
