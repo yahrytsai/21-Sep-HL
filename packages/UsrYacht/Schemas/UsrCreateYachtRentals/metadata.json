@@ -151,7 +151,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "var yachtId = Get<Guid>(\"YachtId\");\r\nvar start = DateTime.Utc.AddDays(7);\r\nvar schema = UserConnection.EntitySchemaManager.GetInstanceByName(\"UsrYachtRentals\");\r\nfor (int i = 0; i < 3; i++) {\r\n    var rental = schema.CreateEntity(UserConnection);\r\n    rental.SetDefColumnValues();\r\n    rental.SetColumnValue(\"UsrYachtId\", yachtId);\r\n    rental.SetColumnValue(\"UsrRentalStart\", start.AddDays(i));\r\n    rental.SetColumnValue(\"UsrRentalEnd\", start.AddDays(i + 1));\r\n    rental.Save();\r\n}\r\nreturn true;",
+          "CH1": "var yachtId = Get<Guid>(\"YachtId\");\r\nvar start = DateTime.UtcNow.AddDays(7);\r\nvar schema = UserConnection.EntitySchemaManager.GetInstanceByName(\"UsrYachtRentals\");\r\nfor (int i = 0; i < 3; i++) {\r\n    var rental = schema.CreateEntity(UserConnection);\r\n    rental.SetDefColumnValues();\r\n    rental.SetColumnValue(\"UsrYachtId\", yachtId);\r\n    rental.SetColumnValue(\"UsrRentalStart\", start.AddDays(i));\r\n    rental.SetColumnValue(\"UsrRentalEnd\", start.AddDays(i + 1));\r\n    rental.Save();\r\n}\r\nreturn true;",
           "CH2": true
         },
         {

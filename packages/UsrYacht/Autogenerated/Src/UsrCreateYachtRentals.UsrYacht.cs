@@ -30,7 +30,7 @@
 
 		private bool ScriptTask1Execute(ProcessExecutingContext context) {
 			var yachtId = Get<Guid>("YachtId");
-			var start = DateTime.Utc.AddDays(7);
+			var start = DateTime.UtcNow.AddDays(7);
 			var schema = UserConnection.EntitySchemaManager.GetInstanceByName("UsrYachtRentals");
 			for (int i = 0; i < 3; i++) {
 			    var rental = schema.CreateEntity(UserConnection);
